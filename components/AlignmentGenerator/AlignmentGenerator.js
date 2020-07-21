@@ -74,6 +74,9 @@ const AlignmentGenerator = ({ alignmentName = "Lawful Good" }) => {
         </tbody>
       </table>
       <style jsx>{`
+        table {
+          margin: 5px;
+        }
         thead,
         tfoot {
           background-color: #3f87a6;
