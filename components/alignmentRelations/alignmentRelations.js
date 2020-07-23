@@ -34,7 +34,40 @@ const neighboursFor = (alignment) => {
         "Chaotic Neutral",
       ];
       break;
-    default:
+  }
+
+  return result;
+};
+const relationsFor = (alignment) => {
+  let result;
+
+  switch (alignment) {
+    case "Lawful Good":
+      result = ["Lawful Evil", "Chaotic Good", "True Neutral"];
+      break;
+    case "Chaotic Good":
+      result = ["Lawful Good", "Chaotic Evil", "True Neutral"];
+      break;
+    case "Lawful Evil":
+      result = ["Lawful Good", "Chaotic Evil", "True Neutral"];
+      break;
+    case "Chaotic Evil":
+      result = ["Chaotic Good", "Lawful Evil", "True Neutral"];
+      break;
+    case "Neutral Good":
+      result = ["Neutral Evil", "Lawful Neutral", "Chaotic Neutral"];
+      break;
+    case "Neutral Evil":
+      result = ["Neutral Good", "Lawful Neutral", "Chaotic Neutral"];
+      break;
+    case "Lawful Neutral":
+      result = ["Neutral Good", "Neutral Evil", "Chaotic Neutral"];
+      break;
+    case "Chaotic Neutral":
+      result = ["Neutral Good", "Neutral Evil", "Lawful Neutral"];
+      break;
+    case "True Neutral":
+      result = ["Lawful Good", "Lawful Evil", "Chaotic Good", "Chaotic Evil"];
       break;
   }
 
@@ -65,4 +98,4 @@ const oppositeFor = (alignment) => {
   return result;
 };
 
-export { neighboursFor, oppositeFor };
+export { neighboursFor, relationsFor, oppositeFor };

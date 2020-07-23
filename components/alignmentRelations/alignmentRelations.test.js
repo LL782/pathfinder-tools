@@ -1,4 +1,4 @@
-import { neighboursFor, oppositeFor } from "./alignmentRelations";
+import { neighboursFor, relationsFor, oppositeFor } from "./alignmentRelations";
 
 describe("Neighbouring alignments", () => {
   describe.each([
@@ -41,6 +41,58 @@ describe("Neighbouring alignments", () => {
     (home, neighbour1, neighbour2, neighbour3, neighbour4) => {
       test(`${neighbour1}, ${neighbour2}, ${neighbour3} and ${neighbour4}`, () => {
         const result = neighboursFor(home);
+        expect(result).toContain(neighbour1);
+        expect(result).toContain(neighbour2);
+        expect(result).toContain(neighbour3);
+        expect(result).toContain(neighbour4);
+        expect(result.length).toBe(4);
+      });
+    }
+  );
+});
+
+describe("Related alignments", () => {
+  describe.each([
+    ["Lawful Good", "Lawful Evil", "True Neutral", "Chaotic Good"],
+    ["Lawful Evil", "Lawful Good", "True Neutral", "Chaotic Evil"],
+    ["Chaotic Good", "Lawful Good", "True Neutral", "Chaotic Evil"],
+    ["Chaotic Evil", "Chaotic Good", "True Neutral", "Lawful Evil"],
+  ])("There are three for %s", (home, neighbour1, neighbour2, neighbour3) => {
+    test(`${neighbour1}, ${neighbour2} and ${neighbour3}`, () => {
+      const result = relationsFor(home);
+      expect(result).toContain(neighbour1);
+      expect(result).toContain(neighbour2);
+      expect(result).toContain(neighbour3);
+      expect(result.length).toBe(3);
+    });
+  });
+  describe.each([
+    ["Neutral Good", "Neutral Evil", "Lawful Neutral", "Chaotic Neutral"],
+    ["Neutral Evil", "Lawful Neutral", "Chaotic Neutral", "Neutral Good"],
+    ["Lawful Neutral", "Chaotic Neutral", "Neutral Good", "Neutral Evil"],
+    ["Chaotic Neutral", "Neutral Good", "Neutral Evil", "Lawful Neutral"],
+  ])("There are three for %s", (home, neighbour1, neighbour2, neighbour3) => {
+    test(`${neighbour1}, ${neighbour2} and ${neighbour3}`, () => {
+      const result = relationsFor(home);
+      expect(result).toContain(neighbour1);
+      expect(result).toContain(neighbour2);
+      expect(result).toContain(neighbour3);
+      expect(result.length).toBe(3);
+    });
+  });
+  describe.each([
+    [
+      "True Neutral",
+      "Lawful Good",
+      "Lawful Evil",
+      "Chaotic Good",
+      "Chaotic Evil",
+    ],
+  ])(
+    "There are four for %s",
+    (home, neighbour1, neighbour2, neighbour3, neighbour4) => {
+      test(`${neighbour1}, ${neighbour2}, ${neighbour3} and ${neighbour4}`, () => {
+        const result = relationsFor(home);
         expect(result).toContain(neighbour1);
         expect(result).toContain(neighbour2);
         expect(result).toContain(neighbour3);
