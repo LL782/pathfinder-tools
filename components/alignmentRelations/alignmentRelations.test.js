@@ -1,4 +1,9 @@
-import { neighboursFor, relationsFor, oppositeFor } from "./alignmentRelations";
+import {
+  neighboursFor,
+  relationsFor,
+  unrelatedFrom,
+  oppositeFor,
+} from "./alignmentRelations";
 
 describe("Neighbouring alignments", () => {
   describe.each([
@@ -101,6 +106,39 @@ describe("Related alignments", () => {
       });
     }
   );
+});
+
+describe("Unrelated alignments", () => {
+  describe.each([
+    ["Lawful Good", "Chaotic Neutral", "Neutral Evil"],
+    ["Lawful Evil", "Neutral Good", "Chaotic Neutral"],
+    ["Chaotic Good", "Lawful Neutral", "Neutral Evil"],
+    ["Chaotic Evil", "Neutral Good", "Lawful Neutral"],
+  ])("There are two for %s", (home, neighbour1, neighbour2) => {
+    test(`${neighbour1} and ${neighbour2}`, () => {
+      const result = unrelatedFrom(home);
+      expect(result).toContain(neighbour1);
+      expect(result).toContain(neighbour2);
+      expect(result.length).toBe(2);
+    });
+  });
+  describe.each([
+    ["Neutral Good", "Chaotic Evil", "Lawful Evil"],
+    ["Neutral Evil", "Lawful Good", "Chaotic Good"],
+    ["Lawful Neutral", "Chaotic Evil", "Chaotic Good"],
+    ["Chaotic Neutral", "Lawful Good", "Lawful Evil"],
+  ])("There are two for %s", (home, neighbour1, neighbour2) => {
+    test(`${neighbour1} and ${neighbour2}`, () => {
+      const result = unrelatedFrom(home);
+      expect(result).toContain(neighbour1);
+      expect(result).toContain(neighbour2);
+      expect(result.length).toBe(2);
+    });
+  });
+  test("There are none for True Neutral", () => {
+    const result = unrelatedFrom("True Neutral");
+    expect(result.length).toBe(0);
+  });
 });
 
 describe("Opposite alignments", () => {
