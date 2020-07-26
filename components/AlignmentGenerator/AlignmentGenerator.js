@@ -1,55 +1,29 @@
+import {
+  neighboursFor,
+  relationsFor,
+  unrelatedFrom,
+  oppositeFor,
+} from "../alignmentRelations";
+import toInitials from "../toInitials";
+
 const AlignmentGenerator = ({ alignmentName = "Lawful Good" }) => {
-  const lawChaos = ["L", "N", "C"];
-  const goodEvil = ["G", "N", "E"];
+  const home = [alignmentName];
+  const neighbours = neighboursFor(alignmentName);
+  const relations = relationsFor(alignmentName);
+  const unrelations = unrelatedFrom(alignmentName);
+  const opposites = oppositeFor(alignmentName);
 
-  const nameToShortName = (name) => name[0];
-
-  const myLawChaos = (() => {
-    const [a] = alignmentName.split(" ");
-    const shortName = nameToShortName(a);
-    const number = shortName === "L" ? 0 : shortName === "C" ? 2 : 1;
-    return number;
-  })();
-  const myGoodEvil = (() => {
-    const [a, b] = alignmentName.split(" ");
-    const shortName = nameToShortName(b);
-    const number = shortName === "G" ? 0 : shortName === "E" ? 2 : 1;
-    return number;
-  })();
-
-  const getRelated = (n) => (n === 0 ? 1 : n === 2 ? 1 : "TODO");
-  const getOpposite = (n) => (n === 0 ? 2 : n === 2 ? 0 : "TODO");
-  // TODO: generate per neutral tables
-
-  const homeAlignment = [`${lawChaos[myLawChaos]}${goodEvil[myGoodEvil]}`];
-  const related = [
-    `${lawChaos[myLawChaos]}${goodEvil[getRelated(myGoodEvil)]}`,
-    `${lawChaos[getRelated(myLawChaos)]}${goodEvil[myGoodEvil]}`,
-  ];
-  const adjacent = [
-    `${lawChaos[getRelated(myLawChaos)]}${goodEvil[getRelated(myGoodEvil)]}`,
-  ];
-  const distant = [
-    `${lawChaos[getOpposite(myLawChaos)]}${goodEvil[myGoodEvil]}`,
-    `${lawChaos[myLawChaos]}${goodEvil[getOpposite(myGoodEvil)]}`,
-    `${lawChaos[getOpposite(myLawChaos)]}${goodEvil[getRelated(myGoodEvil)]}`,
-    `${lawChaos[getRelated(myLawChaos)]}${goodEvil[getOpposite(myGoodEvil)]}`,
-  ];
-  const opposed = [
-    `${lawChaos[getOpposite(myLawChaos)]}${goodEvil[getOpposite(myGoodEvil)]}`,
-  ];
-
-  const alignments = homeAlignment.concat(related, adjacent, distant, opposed);
+  const alignments = home.concat(neighbours, relations, unrelations, opposites);
 
   const chances = [23, 16, 16, 11, 6, 6, 6, 6, 1];
 
   let max = 100;
 
-  const alignmentChances = alignments.map((a, i) => {
+  const alignmentChances = alignments.map((alignmentName, i) => {
     const bottom = max - chances[i];
     const top = max;
     max = bottom - 1;
-    return [a, `${bottom}-${top}%`];
+    return [toInitials(alignmentName), `${bottom}-${top}%`];
   });
 
   // TODO: perform a random role
