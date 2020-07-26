@@ -7,22 +7,27 @@ import {
 import toInitials from "../toInitials";
 
 const AlignmentGenerator = ({ alignmentName = "Lawful Good" }) => {
-  const home = [alignmentName];
-  const neighbours = oneStepRemovedFrom(alignmentName);
-  const relations = twoStepsRemovedFrom(alignmentName);
-  const unrelations = threeStepsRemovedFrom(alignmentName);
-  const opposites = fourStepsRemovedFrom(alignmentName);
+  const original = [alignmentName];
+  const onceRemoved = oneStepRemovedFrom(alignmentName);
+  const twiceRemoved = twoStepsRemovedFrom(alignmentName);
+  const threeTimesRemoved = threeStepsRemovedFrom(alignmentName);
+  const fourTimesRemoved = fourStepsRemovedFrom(alignmentName);
 
-  const alignments = home.concat(neighbours, relations, unrelations, opposites);
+  let maxChance = 100;
+
+  const alignments = original.concat(
+    onceRemoved,
+    twiceRemoved,
+    threeTimesRemoved,
+    fourTimesRemoved
+  );
 
   const chances = [23, 16, 16, 11, 6, 6, 6, 6, 1];
 
-  let max = 100;
-
   const alignmentChances = alignments.map((alignmentName, i) => {
-    const bottom = max - chances[i];
-    const top = max;
-    max = bottom - 1;
+    const bottom = maxChance - chances[i];
+    const top = maxChance;
+    maxChance = bottom - 1;
     return [toInitials(alignmentName), `${bottom}-${top}%`];
   });
 
