@@ -1,4 +1,4 @@
-const neighboursFor = (alignment) => {
+const oneStepRemovedFrom = (alignment) => {
   let result;
 
   switch (alignment) {
@@ -39,7 +39,7 @@ const neighboursFor = (alignment) => {
   return result;
 };
 
-const relationsFor = (alignment) => {
+const twoStepsRemovedFrom = (alignment) => {
   let result;
 
   switch (alignment) {
@@ -75,7 +75,7 @@ const relationsFor = (alignment) => {
   return result;
 };
 
-const unrelatedFrom = (alignment) => {
+const threeStepsRemovedFrom = (alignment) => {
   let result;
 
   switch (alignment) {
@@ -111,7 +111,7 @@ const unrelatedFrom = (alignment) => {
   return result;
 };
 
-const oppositeFor = (alignment) => {
+const fourStepsRemovedFrom = (alignment) => {
   let result;
 
   switch (alignment) {
@@ -135,4 +135,9 @@ const oppositeFor = (alignment) => {
   return result;
 };
 
-export { neighboursFor, relationsFor, unrelatedFrom, oppositeFor };
+export {
+  oneStepRemovedFrom,
+  twoStepsRemovedFrom,
+  threeStepsRemovedFrom,
+  fourStepsRemovedFrom,
+};

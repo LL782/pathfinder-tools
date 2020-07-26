@@ -1,17 +1,17 @@
 import {
-  neighboursFor,
-  relationsFor,
-  unrelatedFrom,
-  oppositeFor,
+  oneStepRemovedFrom,
+  twoStepsRemovedFrom,
+  threeStepsRemovedFrom,
+  fourStepsRemovedFrom,
 } from "../alignmentRelations";
 import toInitials from "../toInitials";
 
 const AlignmentGenerator = ({ alignmentName = "Lawful Good" }) => {
   const home = [alignmentName];
-  const neighbours = neighboursFor(alignmentName);
-  const relations = relationsFor(alignmentName);
-  const unrelations = unrelatedFrom(alignmentName);
-  const opposites = oppositeFor(alignmentName);
+  const neighbours = oneStepRemovedFrom(alignmentName);
+  const relations = twoStepsRemovedFrom(alignmentName);
+  const unrelations = threeStepsRemovedFrom(alignmentName);
+  const opposites = fourStepsRemovedFrom(alignmentName);
 
   const alignments = home.concat(neighbours, relations, unrelations, opposites);
 

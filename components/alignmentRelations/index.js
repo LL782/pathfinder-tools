@@ -1,7 +1,12 @@
 import {
-  neighboursFor,
-  relationsFor,
-  unrelatedFrom,
-  oppositeFor,
+  oneStepRemovedFrom,
+  twoStepsRemovedFrom,
+  threeStepsRemovedFrom,
+  fourStepsRemovedFrom,
 } from "./alignmentRelations";
-export { neighboursFor, relationsFor, unrelatedFrom, oppositeFor };
+export {
+  oneStepRemovedFrom,
+  twoStepsRemovedFrom,
+  threeStepsRemovedFrom,
+  fourStepsRemovedFrom,
+};
