@@ -1,3 +1,5 @@
+import React from "react";
+
 const MyApp = ({ Component, pageProps }) => (
   <>
     <style jsx global>{`
