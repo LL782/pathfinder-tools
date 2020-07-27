@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import AlignmentGenerator from "../components/AlignmentGenerator";
+import RandomAlignmentTable from "../components/RandomAlignmentTable";
 import Main from "../components/Main";
 
 const Home = () => (
@@ -11,10 +11,10 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Main>
-      <AlignmentGenerator alignmentName="Lawful Good" />
-      <AlignmentGenerator alignmentName="Chaotic Good" />
-      <AlignmentGenerator alignmentName="Lawful Evil" />
-      <AlignmentGenerator alignmentName="Chaotic Evil" />
+      <RandomAlignmentTable alignmentName="Lawful Good" />
+      <RandomAlignmentTable alignmentName="Chaotic Good" />
+      <RandomAlignmentTable alignmentName="Lawful Evil" />
+      <RandomAlignmentTable alignmentName="Chaotic Evil" />
     </Main>
   </>
 );

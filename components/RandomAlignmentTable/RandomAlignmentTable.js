@@ -34,7 +34,10 @@ const formatChance = (topOfRange, bottomOfRange) => {
     : `${bottomOfRange}-${topOfRange}%`;
 };
 
-const AlignmentGenerator = ({ alignment = "Lawful Good", dominance = 10 }) => {
+const RandomAlignmentTable = ({
+  alignment = "Lawful Good",
+  dominance = 10,
+}) => {
   const base = [{ alignment, stepsRemoved: 0 }];
   const near = oneStepRemovedFrom(alignment).map(addStepsRemoved(1));
   const mid = twoStepsRemovedFrom(alignment).map(addStepsRemoved(2));
@@ -130,4 +133,4 @@ const AlignmentGenerator = ({ alignment = "Lawful Good", dominance = 10 }) => {
   );
 };
 
-export default AlignmentGenerator;
+export default RandomAlignmentTable;
