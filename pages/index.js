@@ -4,6 +4,8 @@ import Head from "next/head";
 import RandomAlignmentTable from "../components/RandomAlignmentTable";
 import Main from "../components/Main";
 
+const dominance = 10;
+
 const Home = () => (
   <>
     <Head>
@@ -11,10 +13,15 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Main>
-      <RandomAlignmentTable alignmentName="Lawful Good" />
-      <RandomAlignmentTable alignmentName="Chaotic Good" />
-      <RandomAlignmentTable alignmentName="Lawful Evil" />
-      <RandomAlignmentTable alignmentName="Chaotic Evil" />
+      <RandomAlignmentTable alignment="Lawful Good" dominance={dominance} />
+      <RandomAlignmentTable alignment="Neutral Good" dominance={dominance} />
+      <RandomAlignmentTable alignment="Chaotic Good" dominance={dominance} />
+      <RandomAlignmentTable alignment="Lawful Neutral" dominance={dominance} />
+      <RandomAlignmentTable alignment="True Neutral" dominance={dominance} />
+      <RandomAlignmentTable alignment="Chaotic Neutral" dominance={dominance} />
+      <RandomAlignmentTable alignment="Lawful Evil" dominance={dominance} />
+      <RandomAlignmentTable alignment="Neutral Evil" dominance={dominance} />
+      <RandomAlignmentTable alignment="Chaotic Evil" dominance={dominance} />
     </Main>
   </>
 );

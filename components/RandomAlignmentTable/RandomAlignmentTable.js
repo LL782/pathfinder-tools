@@ -7,7 +7,7 @@ const RandomAlignmentTable = ({ baseAlignment, alignmentChances }) => (
       <thead>
         <tr>
           <th scope="col">Alignment</th>
-          <th scope="col">Percentage range</th>
+          <th scope="col">Percentage chance</th>
         </tr>
       </thead>
       <tbody>
@@ -19,6 +19,7 @@ const RandomAlignmentTable = ({ baseAlignment, alignmentChances }) => (
         ))}
       </tbody>
     </table>
+
     <style jsx>{`
       table {
         margin: 5px;
