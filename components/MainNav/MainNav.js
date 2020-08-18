@@ -4,7 +4,9 @@ import Link from "next/link";
 const MainNav = () => (
   <>
     <nav>
-      <Link href="/random-alignment-tables">Random Alignment Tables</Link>
+      <Link href="/random-alignment-tables">
+        <a>Random Alignment Tables</a>
+      </Link>
     </nav>
     <style jsx>{`
       nav {
