@@ -1,8 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is the code for **LL782 Pathfinder Tools**
 
-## Getting Started
+[**Visit**](https://pathfinder-tools.ll782.vercel.app/)
 
-First, run the development server:
+Please get in touch if you have any comments, feedback or suggestions.
+
+## Developer notes
+
+This is a [React](https://reactjs.org/) application, using the [NextJS](https://nextjs.org/) framework and deployed on the [Vercel Platform](https://vercel.com) via [Github](https://github.com).
+
+### Getting Started
+
+You will need **Node** on your machine to run the app locally.
+
+We use, [**nvm**](https://github.com/nvm-sh/nvm) to manage [**Node**](https://nodejs.org/en/) installations. And we use [**Yarn**](https://yarnpkg.com/) rather than **npm**.
+
+```bash
+# run in your terminal
+npm install
+# or
+yarn
+```
+
+To run the development server:
 
 ```bash
 npm run dev
@@ -12,9 +31,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
+### Technology choices - Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -23,8 +40,6 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This app is deployed on the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). Check out Vercel's [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
