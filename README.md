@@ -2,7 +2,7 @@ This is the code for **LL782 Pathfinder Tools**
 
 [**Visit**](https://pathfinder-tools.ll782.vercel.app/)
 
-Please get in touch if you have any comments, feedback or suggestions.
+Please get in touch if you have any comments, feedback or suggestions. Using the [**Issues** tab](https://github.com/LL782/pathfinder-tools/issues) is probably a good way to do that.
 
 ## Developer notes
 
