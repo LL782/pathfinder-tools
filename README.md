@@ -40,6 +40,6 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Deploy on Vercel
+### Deployed on Vercel
 
 This app is deployed on the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). Check out Vercel's [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
