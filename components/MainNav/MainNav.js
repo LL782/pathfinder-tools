@@ -10,11 +10,15 @@ const MainNav = () => (
     </nav>
     <style jsx>{`
       nav {
-        display: flex;
-        min-height: 100vh;
         align-items: center;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      a {
+        padding: 0.25rem;
       }
     `}</style>
   </>
