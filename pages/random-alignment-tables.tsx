@@ -7,7 +7,7 @@ import { Main } from "../Layout/Main";
 const Page = () => (
   <>
     <Head>
-      <title>Random alignment tables - LL782 Pathfinder Tools</title>
+      <title>Random alignment tables - Pathfinder Tools</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Main>
