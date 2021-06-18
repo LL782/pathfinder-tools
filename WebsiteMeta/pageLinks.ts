@@ -5,6 +5,6 @@ export const pageLinks: Array<{ href: string; text: string }> = [
   },
   {
     href: "/speed-and-distance",
-    text: "Speed and Distance",
+    text: "Speed & Distance Tools",
   },
 ];
