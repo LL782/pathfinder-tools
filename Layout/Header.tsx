@@ -2,36 +2,29 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export const Header = () => {
-  const pageLinks: Array<{ href: string; text: string }> = [
-    {
-      href: "/random-alignment-tables",
-      text: "Random Alignment Tables",
-    },
-    {
-      href: "/speed-and-distance",
-      text: "Speed and Distance",
-    },
-  ];
+import { pageLinks } from "../pageLinks";
 
+export const Header = () => {
   const currentPath = useRouter().asPath;
 
   return (
     <>
       <header>
-        {pageLinks.map(({ href, text }) => {
-          const active = href === currentPath;
+        <nav>
+          {pageLinks.map(({ href, text }) => {
+            const active = href === currentPath;
 
-          return (
-            <Link href={href} key={href}>
-              <a className={active && "active"}>{text}</a>
-            </Link>
-          );
-        })}
+            return (
+              <Link href={href} key={href}>
+                <a className={active && "active"}>{text}</a>
+              </Link>
+            );
+          })}
+        </nav>
       </header>
 
       <style jsx>{`
-        header {
+        nav {
           align-items: center;
           display: flex;
           flex-direction: row;
