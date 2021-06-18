@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import { Main } from "../Layout/Main";
 
-const Page = () => (
+const Page: React.FC = () => (
   <>
     <Head>
       <title>Speed and distance notes - Pathfinder Tools</title>

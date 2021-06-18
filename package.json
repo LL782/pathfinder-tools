@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently --kill-others \"yarn next dev\" \"yarn tsc --watch\" \"yarn jest --watch\" ",
     "build": "next build",
     "start": "next start",
-    "test": "jest"
+    "test": "tsc && jest"
   },
   "dependencies": {
     "next": "^11.0.0",
@@ -17,7 +17,13 @@
     "@babel/core": "^7.10.5",
     "@babel/plugin-transform-react-jsx": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.3",
+    "@types/react": "^17.0.11",
     "babel-jest": "^26.1.0",
-    "jest": "^26.1.0"
+    "concurrently": "^6.2.0",
+    "jest": "^26.1.0",
+    "typescript": "^4.3.4"
   }
 }
