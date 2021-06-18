@@ -9,15 +9,18 @@ export const Home = () => (
       <h1>Pathfinder Tools</h1>
       <h2>Contents</h2>
       <ul>
-        {pageLinks.map(({ href, text }) => (
-          <li key={href}>
-            <Link href={href}>
-              <a>
-                <strong>{text}</strong>
-              </a>
-            </Link>
-          </li>
-        ))}
+        {pageLinks.map(
+          ({ href, text }) =>
+            href !== "/" && (
+              <li key={href}>
+                <Link href={href}>
+                  <a>
+                    <strong>{text}</strong>
+                  </a>
+                </Link>
+              </li>
+            )
+        )}
       </ul>
     </main>
     <h2>About</h2>
@@ -29,11 +32,6 @@ export const Home = () => (
       <a href="https://github.com/LL782/pathfinder-tools#readme">
         More about this project on GitHub
       </a>
-    </p>
-    <hr />
-    <p>
-      Copyright &copy; {new Date().getFullYear()} Laurence Lord -{" "}
-      <a href="http://www.gnu.org/licenses/">GNU General Public License</a>
     </p>
   </>
 );
