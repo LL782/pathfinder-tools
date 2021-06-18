@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 
-import { MainNav } from "../components/MainNav";
+import { MainNav } from "../Layout/MainNav";
 
-const Home = () => (
+const Page = () => (
   <>
     <Head>
       <title>LL782 Pathfinder Tools</title>
@@ -21,4 +21,4 @@ const Home = () => (
   </>
 );
 
-export default Home;
+export default Page;

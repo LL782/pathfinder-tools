@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
 
-import { RandomAlignmentTable } from "../components/RandomAlignmentTable";
-import { Main } from "../components/Main";
+import { RandomAlignmentTable } from "../Alignment/RandomAlignmentTable";
+import { Main } from "../Layout/Main";
 
 const dominance = 10;
 
