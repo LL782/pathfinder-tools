@@ -7,6 +7,9 @@ const MainNav = () => (
       <Link href="/random-alignment-tables">
         <a>Random Alignment Tables</a>
       </Link>
+      <Link href="/speed-and-distance">
+        <a>Speed and Distance</a>
+      </Link>
     </nav>
     <style jsx>{`
       nav {
