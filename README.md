@@ -1,45 +1,59 @@
-This is the code for **LL782 Pathfinder Tools**
+# Pathfinder Tools
 
-[**Visit**](https://pathfinder-tools.ll782.vercel.app/)
+🌐 Website: [**pathfinder-tools.vercel.app**](https://pathfinder-tools.vercel.app/)
 
-Please get in touch if you have any comments, feedback or suggestions. Using the [**Issues** tab](https://github.com/LL782/pathfinder-tools/issues) is probably a good way to do that.
+🔨 Status: **alpha** (meaning very far from being a fully featured)
+
+---
+
+The website is a collection of tools for running Pathfinder
+
+- 🌱 There's not much here yet - **just a few scraps** and the beginning of a structure
+- 👷🏽‍♀️ This is a "side project of a hobby" – **work in progress**
+- 👋 It's [**open source**]((https://en.wikipedia.org/wiki/Open_source)) and here on GitHub so you can own it too
+
+
+## Contributors
+
+Please get in touch with any comments, offering or suggestions.
+
+- 💡 Use [**Issues**](https://github.com/LL782/pathfinder-tools/issues/) for any ideas (features/bugs/suggestions)
+- 👩🏻‍💻 Use [**Pull requests**](https://github.com/LL782/pathfinder-tools/pulls/) to present codebase changes (including fixing typos, etc.)
+- ✉️ [**Email me**](mailto:hello@laurencelord.co.uk) if you want
+
+Whatever your technical level is, if you'd like to get involved with the code or the content then please do. 
+
+---
 
 ## Developer notes
 
-This is a [React](https://reactjs.org/) application, using the [NextJS](https://nextjs.org/) framework and deployed on the [Vercel Platform](https://vercel.com) via [Github](https://github.com).
+It's all a bit quick and dirty in terms of the code (remember this is a side project of a hobby).
 
-### Getting Started
+The website is built with [React](https://reactjs.org/) with the [NEXT.js](https://nextjs.org/) framework. It gets deployed on to the [Vercel Platform](https://vercel.com) via a [Github](https://github.com) action. 
 
-You will need **Node** on your machine to run the app locally.
+_Note that I'll use the words "website" and "app" interchangeably._
 
-We use, [**nvm**](https://github.com/nvm-sh/nvm) to manage [**Node**](https://nodejs.org/en/) installations. And we use [**Yarn**](https://yarnpkg.com/) rather than **npm**.
+### Getting started
+
+To run the website locally, you will need [**Node**](https://nodejs.org/en/) installed on your computer, if you don't already.
+
+You'll also need [**Yarn**](https://yarnpkg.com/) (or [**npm**](npmjs.com/)) to manage packages.
+
+#### Run these commands in your Terminal
+
+Once you have your dependancies (Node and Yarn) run the following scripts from your Terminal.
+
+To install or upgrade the app:
 
 ```bash
-# run in your terminal
-npm install
-# or
 yarn
 ```
 
-To run the development server:
+To start the running the website:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) and you should see the website running in dev mode.
 
-### Technology choices - Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-### Deployed on Vercel
-
-This app is deployed on the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme). Check out Vercel's [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
