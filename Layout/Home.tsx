@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
-import { pageLinks } from "../pageLinks";
+import { InviteToEditOnGitHub } from "../WebsiteMeta/InviteToEditOnGithub";
+import { pageLinks } from "../WebsiteMeta/pageLinks";
 
 export const Home = () => (
   <>
@@ -16,6 +17,8 @@ export const Home = () => (
           </li>
         ))}
       </ul>
+      <p>Welcome to this collection of Pathfinder tools.</p>
     </main>
+    <InviteToEditOnGitHub />
   </>
 );
