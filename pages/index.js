@@ -9,7 +9,15 @@ const Home = () => (
       <title>LL782 Pathfinder Tools</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
+    <h1>Pathfinder Tools</h1>
     <MainNav />
+    <style jsx>
+      {`
+        h1 {
+          text-align: center;
+        }
+      `}
+    </style>
   </>
 );
 

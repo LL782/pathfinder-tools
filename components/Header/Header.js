@@ -1,29 +1,30 @@
 import React from "react";
 import Link from "next/link";
 
-const MainNav = () => (
+export const Header = () => (
   <>
-    <nav>
+    <header>
+      <Link href="/">
+        <a>Pathfinder Tools</a>
+      </Link>
       <Link href="/random-alignment-tables">
         <a>Random Alignment Tables</a>
       </Link>
       <Link href="/speed-and-distance">
         <a>Speed and Distance</a>
       </Link>
-    </nav>
+    </header>
+
     <style jsx>{`
-      nav {
+      header {
         align-items: center;
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: left;
       }
       a {
-        padding: 0.25rem;
+        padding: 0.5rem;
       }
     `}</style>
   </>
 );
-
-export default MainNav;
