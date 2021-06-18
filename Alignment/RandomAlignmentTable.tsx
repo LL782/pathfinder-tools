@@ -5,9 +5,10 @@ import {
   twoStepsRemovedFrom,
   threeStepsRemovedFrom,
   fourStepsRemovedFrom,
-} from "../alignmentRelations";
-import toInitials from "../toInitials";
-import { RandomAlignmentTable } from "./RandomAlignmentTable";
+} from "./alignmentRelations";
+
+import toInitials from "../Formatting/toInitials";
+import { Table } from "../Layout/Table";
 
 const numberOfAlignments = 9;
 const baseChance = (100 - numberOfAlignments) / numberOfAlignments;
@@ -35,7 +36,7 @@ const formatChance = (topOfRange, bottomOfRange) => {
     : `${bottomOfRange}-${topOfRange}%`;
 };
 
-export const RandomAlignmentTableContainer = ({
+export const RandomAlignmentTable = ({
   alignment = "Lawful Good",
   dominance = 10,
 }) => {
@@ -73,9 +74,6 @@ export const RandomAlignmentTableContainer = ({
   });
 
   return (
-    <RandomAlignmentTable
-      baseAlignment={alignment}
-      alignmentChances={alignmentChances}
-    />
+    <Table baseAlignment={alignment} alignmentChances={alignmentChances} />
   );
 };

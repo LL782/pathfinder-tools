@@ -1,6 +1,6 @@
 import React from "react";
 
-export const CentralFlex = ({ children }) => (
+export const TablesCollection = ({ children }) => (
   <>
     <div>{children}</div>
     <style jsx>{`

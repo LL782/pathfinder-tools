@@ -1,6 +1,6 @@
 import React from "react";
 
-export const RandomAlignmentTable = ({ baseAlignment, alignmentChances }) => (
+export const Table = ({ baseAlignment, alignmentChances }) => (
   <>
     <table>
       <caption>{baseAlignment} territory</caption>
