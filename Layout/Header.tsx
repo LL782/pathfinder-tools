@@ -25,6 +25,9 @@ export const Header = () => (
       a {
         padding: 0.5rem;
       }
+      a:first-child {
+        padding-left: 0;
+      }
     `}</style>
   </>
 );
