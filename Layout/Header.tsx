@@ -4,9 +4,6 @@ import Link from "next/link";
 export const Header = () => (
   <>
     <header>
-      <Link href="/">
-        <a>Pathfinder Tools</a>
-      </Link>
       <Link href="/random-alignment-tables">
         <a>Random Alignment Tables</a>
       </Link>
