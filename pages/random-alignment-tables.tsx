@@ -1,10 +1,11 @@
 import React from "react";
 import Head from "next/head";
 
-import { RandomAlignmentTable } from "../Alignment/RandomAlignmentTable";
+import { CentralFlex } from "../Layout/CentralFlex";
 import { Main } from "../Layout/Main";
+import { RandomAlignmentTable } from "../Alignment/RandomAlignmentTable";
 
-const dominance = 10;
+const d = 10;
 
 const Page = () => (
   <>
@@ -13,15 +14,17 @@ const Page = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Main>
-      <RandomAlignmentTable alignment="Lawful Good" dominance={dominance} />
-      <RandomAlignmentTable alignment="Neutral Good" dominance={dominance} />
-      <RandomAlignmentTable alignment="Chaotic Good" dominance={dominance} />
-      <RandomAlignmentTable alignment="Lawful Neutral" dominance={dominance} />
-      <RandomAlignmentTable alignment="True Neutral" dominance={dominance} />
-      <RandomAlignmentTable alignment="Chaotic Neutral" dominance={dominance} />
-      <RandomAlignmentTable alignment="Lawful Evil" dominance={dominance} />
-      <RandomAlignmentTable alignment="Neutral Evil" dominance={dominance} />
-      <RandomAlignmentTable alignment="Chaotic Evil" dominance={dominance} />
+      <CentralFlex>
+        <RandomAlignmentTable alignment="Lawful Good" dominance={d} />
+        <RandomAlignmentTable alignment="Neutral Good" dominance={d} />
+        <RandomAlignmentTable alignment="Chaotic Good" dominance={d} />
+        <RandomAlignmentTable alignment="Lawful Neutral" dominance={d} />
+        <RandomAlignmentTable alignment="True Neutral" dominance={d} />
+        <RandomAlignmentTable alignment="Chaotic Neutral" dominance={d} />
+        <RandomAlignmentTable alignment="Lawful Evil" dominance={d} />
+        <RandomAlignmentTable alignment="Neutral Evil" dominance={d} />
+        <RandomAlignmentTable alignment="Chaotic Evil" dominance={d} />
+      </CentralFlex>
     </Main>
   </>
 );
