@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "next/head";
 
-import RandomAlignmentTable from "../components/RandomAlignmentTable";
-import Main from "../components/Main";
+import { RandomAlignmentTable } from "../components/RandomAlignmentTable";
+import { Main } from "../components/Main";
 
 const dominance = 10;
 
-const RandomAlignmentTables = () => (
+const Page = () => (
   <>
     <Head>
       <title>Random alignment tables - LL782 Pathfinder Tools</title>
@@ -26,4 +26,4 @@ const RandomAlignmentTables = () => (
   </>
 );
 
-export default RandomAlignmentTables;
+export default Page;

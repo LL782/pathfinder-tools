@@ -1,11 +1,9 @@
 import React from "react";
 import Head from "next/head";
 
-import Main from "../components/Main";
+import { Main } from "../components/Main";
 
-const dominance = 10;
-
-const RandomAlignmentTables = () => (
+const Page = () => (
   <>
     <Head>
       <title>Speed and distance notes - Pathfinder Tools</title>
@@ -35,4 +33,4 @@ const RandomAlignmentTables = () => (
   </>
 );
 
-export default RandomAlignmentTables;
+export default Page;

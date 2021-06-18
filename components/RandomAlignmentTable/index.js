@@ -1,3 +1,3 @@
-import RandomAlignmentTableContainer from "./RandomAlignmentTableContainer";
+import { RandomAlignmentTableContainer } from "./RandomAlignmentTableContainer";
 
-export default RandomAlignmentTableContainer;
+export { RandomAlignmentTableContainer as RandomAlignmentTable };

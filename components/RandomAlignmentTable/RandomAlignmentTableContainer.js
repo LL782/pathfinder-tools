@@ -7,7 +7,7 @@ import {
   fourStepsRemovedFrom,
 } from "../alignmentRelations";
 import toInitials from "../toInitials";
-import RandomAlignmentTable from "./RandomAlignmentTable";
+import { RandomAlignmentTable } from "./RandomAlignmentTable";
 
 const numberOfAlignments = 9;
 const baseChance = (100 - numberOfAlignments) / numberOfAlignments;
@@ -35,7 +35,7 @@ const formatChance = (topOfRange, bottomOfRange) => {
     : `${bottomOfRange}-${topOfRange}%`;
 };
 
-const RandomAlignmentTableContainer = ({
+export const RandomAlignmentTableContainer = ({
   alignment = "Lawful Good",
   dominance = 10,
 }) => {
@@ -79,5 +79,3 @@ const RandomAlignmentTableContainer = ({
     />
   );
 };
-
-export default RandomAlignmentTableContainer;

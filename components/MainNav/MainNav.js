@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const MainNav = () => (
+export const MainNav = () => (
   <>
     <nav>
       <Link href="/random-alignment-tables">
@@ -25,5 +25,3 @@ const MainNav = () => (
     `}</style>
   </>
 );
-
-export default MainNav;

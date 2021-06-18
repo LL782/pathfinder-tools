@@ -2,7 +2,7 @@ import React from "react";
 
 import { Header } from "../Header";
 
-const Main = ({ children }) => (
+export const Main = ({ children }) => (
   <>
     <Header />
     <main>{children}</main>
@@ -16,5 +16,3 @@ const Main = ({ children }) => (
     `}</style>
   </>
 );
-
-export default Main;
