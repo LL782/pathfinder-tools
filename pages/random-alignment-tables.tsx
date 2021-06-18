@@ -14,8 +14,7 @@ const Page = () => (
     <Explanation>
       <p>
         Given a territory has a <strong>dominant alignment</strong> and a
-        certain
-        <strong>tolerance</strong> for other ideologies, then we can roll dice
+        certain <strong>tolerance</strong> for other ideologies, then we can roll dice
         for the alignments of random individuals there.
       </p>
       <p>
