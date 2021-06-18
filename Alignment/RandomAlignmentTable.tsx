@@ -54,9 +54,11 @@ export const RandomAlignmentTable = ({
   const getDeviation = ({ stepsRemoved }) =>
     (extremism - stepsRemoved) * adheranceToTheBase;
 
+  const columns = ["Alignment", "Percentage chance"];
+
   let maxChance = 100;
 
-  const alignmentChances = alignments.map((a) => {
+  const alignmentChances: String[][] = alignments.map((a) => {
     const { alignment, stepsRemoved } = a;
     const deviation = getDeviation({ stepsRemoved });
     const chance = baseChance + deviation;
@@ -74,6 +76,10 @@ export const RandomAlignmentTable = ({
   });
 
   return (
-    <Table baseAlignment={alignment} alignmentChances={alignmentChances} />
+    <Table
+      body={alignmentChances}
+      caption={`${alignment} territory`}
+      columnHeadings={columns}
+    />
   );
 };

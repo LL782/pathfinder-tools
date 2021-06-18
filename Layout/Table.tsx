@@ -1,20 +1,34 @@
 import React from "react";
 
-export const Table = ({ baseAlignment, alignmentChances }) => (
+interface Props {
+  body?: String[][];
+  caption: String;
+  columnHeadings?: String[];
+}
+
+export const Table = ({
+  body = [
+    ["Example one", "1"],
+    ["Example two", "2"],
+  ],
+  caption = "Table caption",
+  columnHeadings = ["Column 1", "Column 2"],
+}: Props) => (
   <>
     <table>
-      <caption>{baseAlignment} territory</caption>
+      <caption>{caption}</caption>
       <thead>
         <tr>
-          <th scope="col">Alignment</th>
-          <th scope="col">Percentage chance</th>
+          {columnHeadings.map((heading) => (
+            <th scope="col">{heading}</th>
+          ))}
         </tr>
       </thead>
       <tbody>
-        {alignmentChances.map(([alignment, chance]) => (
-          <tr key={`${alignment}`}>
-            <th scope="row">{alignment}</th>
-            <td>{chance}</td>
+        {body.map(([key, vaue]) => (
+          <tr key={`${key}`}>
+            <th scope="row">{key}</th>
+            <td>{vaue}</td>
           </tr>
         ))}
       </tbody>
