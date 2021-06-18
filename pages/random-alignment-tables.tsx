@@ -28,6 +28,11 @@ const Page = () => (
     <Main>
       <RandomAlignmentTables />
     </Main>
+    <Explanation>
+      <p>
+       All of the examples above use a default tolerance level. 
+      </p>
+    </Explanation> 
   </>
 );
 
