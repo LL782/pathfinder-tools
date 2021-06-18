@@ -22,6 +22,7 @@ export const Header = () => {
           })}
         </nav>
       </header>
+      <hr />
 
       <style jsx>{`
         nav {

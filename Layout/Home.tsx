@@ -17,8 +17,11 @@ export const Home = () => (
           </li>
         ))}
       </ul>
-      <p>Welcome to this collection of Pathfinder tools.</p>
     </main>
-    <InviteToEditOnGitHub />
+    <hr />
+    <p>Welcome to this collection of Pathfinder tools.</p>
+    <a href="https://github.com/LL782/pathfinder-tools#readme">
+      About this project
+    </a>
   </>
 );
