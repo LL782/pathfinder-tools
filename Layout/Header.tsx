@@ -28,8 +28,17 @@ export const Header = () => {
         nav {
           align-items: center;
           display: flex;
-          flex-direction: row;
           justify-content: left;
+        }
+        @media screen and (max-width: 599px) {
+          nav {
+            flex-direction: column;
+          }
+        }
+        @media screen and (min-width: 600px) {
+          nav {
+            flex-direction: row;
+          }
         }
         a {
           padding: 0.5rem;
