@@ -20,7 +20,9 @@ export const Table = ({
       <thead>
         <tr>
           {columnHeadings.map((heading) => (
-            <th scope="col">{heading}</th>
+            <th key={`${heading}`} scope="col">
+              {heading}
+            </th>
           ))}
         </tr>
       </thead>
