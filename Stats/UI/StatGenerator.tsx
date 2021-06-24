@@ -9,7 +9,7 @@ export const StatsGenerator = () => {
       <p>Results</p>
       <Table
         caption="3d6 six times. Keep highest"
-        columnHeadings={["Result", "Winning dice", "All Rolls"]}
+        columnHeadings={["Result", "Winning dice", "All rolls"]}
         body={[
           [
             "17",
