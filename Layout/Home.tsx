@@ -25,8 +25,8 @@ export const Home = () => (
     </main>
     <h2>About</h2>
     <p>
-      I've chosen to this online to make it easier for me to find and so others
-      can get involved. All feedback appreciated.
+      I've chosen to put this online to make it easier for me to find and so
+      others can get involved. All feedback appreciated.
     </p>
     <p>
       <a href="https://github.com/LL782/pathfinder-tools#readme">
