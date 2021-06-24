@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Explanation } from "../Layout/Explanation";
 import { Main } from "../Layout/Main";
 
-import { StatsGenerator } from "../Stats/UI/StatGenerator";
+import { StatsGenerator } from "../Stats/UI/StatsGenerator";
 
 const Page = () => (
   <>
