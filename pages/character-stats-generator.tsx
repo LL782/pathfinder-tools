@@ -4,6 +4,8 @@ import Head from "next/head";
 import { Explanation } from "../Layout/Explanation";
 import { Main } from "../Layout/Main";
 
+import { StatsGenerator } from "../Stats/UI/StatGenerator";
+
 const Page = () => (
   <>
     <Head>
@@ -13,13 +15,17 @@ const Page = () => (
     <Explanation>
       <p>
         I roll three d6, six times, per stat. This tool does that at the touch
-        of a button...
+        of a button.
       </p>
     </Explanation>
     <Main>
       <p>
-        <strong>Character Stats Generator not implemented :)</strong>
+        <strong>
+          Character Stats Generator not implemented!! <br />
+          Do not trust this work in progress :)
+        </strong>
       </p>
+      <StatsGenerator />
     </Main>
   </>
 );

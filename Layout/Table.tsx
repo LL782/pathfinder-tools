@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
   body?: String[][];
-  caption: String;
+  caption?: String;
   columnHeadings?: String[];
 }
 
@@ -27,10 +27,12 @@ export const Table = ({
         </tr>
       </thead>
       <tbody>
-        {body.map(([key, vaue]) => (
+        {body.map(([key, ...values]) => (
           <tr key={`${key}`}>
             <th scope="row">{key}</th>
-            <td>{vaue}</td>
+            {values.map((value) => (
+              <td>{value}</td>
+            ))}
           </tr>
         ))}
       </tbody>
