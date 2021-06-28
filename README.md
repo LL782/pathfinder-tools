@@ -2,7 +2,7 @@
 
 🌐 Website: [**pathfinder-tools.vercel.app**](https://pathfinder-tools.vercel.app/)
 
-🔨 Status: **alpha** (meaning very far from being a fully featured)
+🔨 Status: **alpha** (meaning very far from being fully featured)
 
 ---
 
