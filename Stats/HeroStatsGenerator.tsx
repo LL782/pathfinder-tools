@@ -34,7 +34,7 @@ export const HeroStatsGenerator = () => {
       )}
       <h4>Prefer your data raw?</h4>
       <p>
-        The API is at:{" "}
+        The endpoint is at:{" "}
         <a href="/api/dice/hero-stats-generator">
           /api/dice/hero-stats-generator
         </a>
