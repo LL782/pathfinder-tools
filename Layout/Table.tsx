@@ -1,13 +1,13 @@
 import React from "react";
 
 interface Props {
-  body?: String[][];
+  tableBody?: String[][];
   caption?: String;
   columnHeadings?: String[];
 }
 
 export const Table = ({
-  body = [
+  tableBody = [
     ["Example one", "1"],
     ["Example two", "2"],
   ],
@@ -27,7 +27,7 @@ export const Table = ({
         </tr>
       </thead>
       <tbody>
-        {body.map(([key, ...values]) => (
+        {tableBody.map(([key, ...values]) => (
           <tr key={`${key}`}>
             <th scope="row">{key}</th>
             {values.map((value) => (

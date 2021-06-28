@@ -77,7 +77,7 @@ export const RandomAlignmentTable = ({
 
   return (
     <Table
-      body={alignmentChances}
+      tableBody={alignmentChances}
       caption={`${alignment} territory`}
       columnHeadings={columns}
     />

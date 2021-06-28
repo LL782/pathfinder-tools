@@ -28,7 +28,7 @@ const Page: React.FC = () => {
             <Table
               caption="Slow character at&nbsp;full&nbsp;speed"
               columnHeadings={columnHeadings}
-              body={[
+              tableBody={[
                 ["1 round", "40'"],
                 ["1 minute", "400'"],
               ]}
@@ -36,7 +36,7 @@ const Page: React.FC = () => {
             <Table
               caption="Average character at&nbsp;full&nbsp;speed"
               columnHeadings={columnHeadings}
-              body={[
+              tableBody={[
                 ["1 round", "120'"],
                 ["1 minute", "1,200'"],
               ]}
@@ -44,7 +44,7 @@ const Page: React.FC = () => {
             <Table
               caption="Super&nbsp;fast&nbsp;character at&nbsp;full&nbsp;speed"
               columnHeadings={columnHeadings}
-              body={[
+              tableBody={[
                 ["1 round", "200'"],
                 ["1 minute", "2,000'"],
               ]}
