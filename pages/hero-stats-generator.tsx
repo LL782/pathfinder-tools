@@ -16,7 +16,7 @@ const Page = () => (
       <h2>Hero Stats Generator</h2>
       <Explanation>
         <p>
-          I roll player-characters (and a lot of non-player-characters) with
+          I gen player-characters (and a lot of non-player-characters) with
           "hero quality" stats. This was the method I was taught when learning
           AD&amp;D in 1980s:
         </p>
