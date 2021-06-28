@@ -1,7 +1,8 @@
 import React from "react";
 
+export type TableBody = (String | Number)[][];
 interface Props {
-  tableBody?: String[][];
+  tableBody?: TableBody;
   caption?: String;
   columnHeadings?: String[];
 }
