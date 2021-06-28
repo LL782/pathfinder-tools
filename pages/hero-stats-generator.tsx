@@ -4,7 +4,7 @@ import Head from "next/head";
 import { Explanation } from "../Layout/Explanation";
 import { Main } from "../Layout/Main";
 
-import { HeroStatsGenerator } from "../Stats/UI/HeroStatsGenerator";
+import { HeroStatsGenerator } from "../Stats/HeroStatsGenerator";
 
 const Page = () => (
   <>

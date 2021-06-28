@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-import { heroStatsGenerator } from "../../pages/api/dice/hero-stats-generator";
+import { heroStatsGenerator } from "../pages/api/dice/hero-stats-generator";
 
-import { Table } from "../../Layout/Table";
+import { Table } from "../Layout/Table";
 
 export const HeroStatsGenerator = () => {
   const { columnHeadings } = heroStatsGenerator().tableFormat;
