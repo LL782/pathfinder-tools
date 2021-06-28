@@ -28,11 +28,11 @@ export const Table = ({
         </tr>
       </thead>
       <tbody>
-        {tableBody.map(([key, ...values]) => (
-          <tr key={`${key}`}>
+        {tableBody.map(([key, ...values], i) => (
+          <tr key={`row_${i}`}>
             <th scope="row">{key}</th>
-            {values.map((value) => (
-              <td>{value}</td>
+            {values.map((value, j) => (
+              <td key={`cell_${i}_${j}`}>{value}</td>
             ))}
           </tr>
         ))}
