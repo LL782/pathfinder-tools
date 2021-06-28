@@ -9,19 +9,19 @@
 The website is a collection of tools for running Pathfinder
 
 - 🌱 There's not much here yet - **just a few scraps** and the beginning of a structure
-- 👷🏽‍♀️ This is a "side project of a hobby" – **work in progress**
-- 👋 It's [**open source**]((https://en.wikipedia.org/wiki/Open_source)) and here on GitHub so you can own it too
+- 👷🏽‍♀️ This is a "side project of a hobby" – **forever work in progress**
+- 🔨 It's [**open source**]((https://en.wikipedia.org/wiki/Open_source)) and here on GitHub so you can build it too
 
 
-## Contributors
+## Contributing
 
-Please get in touch with any comments, offering or suggestions.
+Please get in touch with any comments, offering or suggestions. Also,
 
-- 💡 Use [**Issues**](https://github.com/LL782/pathfinder-tools/issues/) for any ideas (features/bugs/suggestions)
+- 💡 Use this [**Issues**](https://github.com/LL782/pathfinder-tools/issues/) link for features requests, bug reports and general ideas
 - 👩🏻‍💻 Use [**Pull requests**](https://github.com/LL782/pathfinder-tools/pulls/) to present codebase changes (including fixing typos, etc.)
-- ✉️ [**Email me**](mailto:hello@laurencelord.co.uk) if you want
+- ✉️ Feel free to [**email me**](mailto:hello@laurencelord.co.uk) if you like
 
-Whatever your technical level is, if you'd like to get involved with the code or the content then please do. 
+Whatever your technical level is you're invited to get involved with code, content, ideas, etc.
 
 ---
 
