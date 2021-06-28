@@ -7,8 +7,8 @@ describe("Hero Stats Generator", () => {
     describe("The formatted response", () => {
       const { columnHeadings, tableBody } = tableFormat;
 
-      it('includes column headings "Result", "Winning dice" and "All rolls"', () => {
-        expect(columnHeadings).toEqual(["Result", "Winning dice", "All rolls"]);
+      it('includes column headings "Stat", "Winning dice" and "All rolls"', () => {
+        expect(columnHeadings).toEqual(["Stat", "Winning dice", "All rolls"]);
       });
       it("includes a tableBody with six stats", () => {
         expect(tableBody.length).toEqual(6);

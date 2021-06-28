@@ -5,8 +5,8 @@ export const pageLinks: Array<{ href: string; text: string }> = [
   },
   // Feature not ready for release
   // {
-  //   href: "/character-stats-generator",
-  //   text: "Character Stats Generator",
+  //   href: "/hero-stats-generator",
+  //   text: "Hero Stats Generator",
   // },
   {
     href: "/random-alignment-tables",

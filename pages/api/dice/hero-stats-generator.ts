@@ -70,7 +70,7 @@ export const heroStatsGenerator = (): Stats => {
   return {
     raw,
     tableFormat: {
-      columnHeadings: ["Result", "Winning dice", "All rolls"],
+      columnHeadings: ["Stat", "Winning dice", "All rolls"],
       tableBody: raw.map(formatStats),
     },
   };
