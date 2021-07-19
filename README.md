@@ -1,6 +1,6 @@
 # Pathfinder Tools
 
-🌐 Website: [**pathfinder-tools.vercel.app**](https://pathfinder-tools.vercel.app/)
+🌐 Website: [**www.pathfindertools.com**](https://www.pathfindertools.com/)
 
 🔨 Status: **alpha** (meaning very far from being fully featured)
 
