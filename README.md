@@ -2,7 +2,7 @@
 
 🌐 Website: [**www.pathfindertools.com**](https://www.pathfindertools.com/)
 
-🔨 Status: **alpha** (meaning very far from being fully featured)
+🔨 Status: **pre-alpha** (meaning very far from being fully featured)
 
 ---
 
