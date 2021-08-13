@@ -30,7 +30,7 @@ const Page = () => (
     </Main>
     <Explanation>
       <p>
-       Note: All of the examples above use a default tolerance level. 
+       Note: All of the examples above use a default tolerance level. The variation is down to the <strong>extremity</strong> of the alignment.
       </p>
     </Explanation> 
   </>
