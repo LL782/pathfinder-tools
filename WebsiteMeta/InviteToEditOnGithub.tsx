@@ -11,7 +11,7 @@ export const InviteToEditOnGitHub = () => {
       <p>
         Thought of something?{" "}
         <a href={`https://github.com/LL782/pathfinder-tools/issues/new`}>
-          Raise an issue
+          Raise it
         </a>
         ,{" "}
         <a
@@ -19,9 +19,9 @@ export const InviteToEditOnGitHub = () => {
         >
           suggest an edit
         </a>{" "}
-        or message me via{" "}
+        or message me on{" "}
         <a href={`https://github.com/LL782/pathfinder-tools/#readme`}>
-          this GitHub
+          the GitHub
         </a>
       </p>
     </section>
