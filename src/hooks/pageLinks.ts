@@ -15,4 +15,8 @@ export const pageLinks: Array<{ href: string; text: string }> = [
     href: "/speed-and-distance",
     text: "Speed & Distance Notes",
   },
+  {
+    href: "/character-generator",
+    text: "Character Generator (pre-alpha)",
+  },
 ];
