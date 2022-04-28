@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
 
-import { Explanation } from "../Layout/Explanation";
-import { Main } from "../Layout/Main";
+import { Explanation } from "../components/Layout/Explanation";
+import { Main } from "../components/Layout/Main";
 
-import { HeroStatsGenerator } from "../Stats/HeroStatsGenerator";
+import { HeroStatsGenerator } from "../components/Stats/HeroStatsGenerator";
 
 const Page = () => (
   <>

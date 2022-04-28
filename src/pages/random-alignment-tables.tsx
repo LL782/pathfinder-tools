@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 
-import { Explanation } from "../Layout/Explanation";
-import { Main } from "../Layout/Main";
-import { RandomAlignmentTables } from "../Alignment/RandomAlignmentTables";
+import { Explanation } from "../components/Layout/Explanation";
+import { Main } from "../components/Layout/Main";
+import { RandomAlignmentTables } from "../components/Alignment/RandomAlignmentTables";
 
 const Page = () => (
   <>
@@ -14,8 +14,8 @@ const Page = () => (
     <Explanation>
       <p>
         Given a territory has a <strong>dominant alignment</strong> and a
-        certain <strong>tolerance</strong> for other ideologies, then we can roll dice
-        for the alignments of random individuals there.
+        certain <strong>tolerance</strong> for other ideologies, then we can
+        roll dice for the alignments of random individuals there.
       </p>
       <p>
         For example, how likely is your cleric to encounter potential converts
@@ -30,9 +30,10 @@ const Page = () => (
     </Main>
     <Explanation>
       <p>
-       Note: All of the examples above use a default tolerance level. The variation is down to the <strong>extremity</strong> of the alignment.
+        Note: All of the examples above use a default tolerance level. The
+        variation is down to the <strong>extremity</strong> of the alignment.
       </p>
-    </Explanation> 
+    </Explanation>
   </>
 );
 

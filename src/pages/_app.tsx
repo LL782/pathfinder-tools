@@ -1,8 +1,8 @@
 import { AppProps } from "next/dist/shared/lib/router/router";
 import React from "react";
 
-import { Header } from "../Layout/Header";
-import { InviteToEditOnGitHub } from "../WebsiteMeta/InviteToEditOnGithub";
+import { Header } from "../components/Layout/Header";
+import { InviteToEditOnGitHub } from "../components/Layout/InviteToEditOnGithub";
 
 const GlobalStyles = () => (
   <style jsx global>{`

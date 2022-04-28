@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-import { pageLinks } from "../WebsiteMeta/pageLinks";
+import { pageLinks } from "../../hooks/pageLinks";
 
 export const Header = () => {
   const currentPath = useRouter().asPath;

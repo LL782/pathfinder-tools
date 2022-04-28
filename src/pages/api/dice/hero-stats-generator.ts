@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { TableBody } from "../../../Layout/Table";
+import { TableBody } from "../../../components/Layout/Table";
 
 type ThreeDice = [number, number, number];
 

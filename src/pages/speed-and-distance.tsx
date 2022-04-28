@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
 
-import { Explanation } from "../Layout/Explanation";
-import { Main } from "../Layout/Main";
-import { Table } from "../Layout/Table";
-import { TablesCollection } from "../Layout/TablesCollection";
+import { Explanation } from "../components/Layout/Explanation";
+import { Main } from "../components/Layout/Main";
+import { Table } from "../components/Layout/Table";
+import { TablesCollection } from "../components/Layout/TablesCollection";
 
 const Page: React.FC = () => {
   const columnHeadings = ["Time", "Distance"];

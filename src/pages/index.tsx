@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import { Home } from "../Layout/Home";
+import { Home } from "../components/Layout/Home";
 
 const Page = () => (
   <>

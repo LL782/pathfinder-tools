@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { pageLinks } from "../WebsiteMeta/pageLinks";
+import { pageLinks } from "../../hooks/pageLinks";
 
 export const Home = () => (
   <>
