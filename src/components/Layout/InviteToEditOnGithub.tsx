@@ -15,7 +15,7 @@ export const InviteToEditOnGitHub = () => {
         </a>
         ,{" "}
         <a
-          href={`https://github.com/LL782/pathfinder-tools/edit/master/pages${slug}`}
+          href={`https://github.com/LL782/pathfinder-tools/edit/main/src/pages${slug}`}
         >
           suggest an edit
         </a>{" "}
