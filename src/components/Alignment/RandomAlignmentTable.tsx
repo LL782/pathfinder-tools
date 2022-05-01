@@ -7,8 +7,8 @@ import {
   fourStepsRemovedFrom,
 } from "./alignmentRelations";
 
-import toInitials from "../Formatting/toInitials";
 import { Table } from "../Layout/Table";
+import { useInitialLetters } from "../../hooks/TextFormatting/useInitialLetters";
 
 const numberOfAlignments = 9;
 const baseChance = (100 - numberOfAlignments) / numberOfAlignments;
@@ -24,7 +24,6 @@ const getMeanStepsRemoved = (alignments) => {
   return sum / alignments.length;
 };
 
-const formatAlignment = toInitials;
 const formatChance = (topOfRange, bottomOfRange) => {
   topOfRange = topOfRange > 0 ? Math.round(topOfRange) : 0;
   bottomOfRange = bottomOfRange > 1 ? Math.round(bottomOfRange) : 1;
@@ -66,7 +65,7 @@ export const RandomAlignmentTable = ({
     const bottomOfRange = maxChance - chance;
 
     const formattedResult = [
-      formatAlignment(alignment),
+      useInitialLetters(alignment),
       formatChance(topOfRange, bottomOfRange),
     ];
 
