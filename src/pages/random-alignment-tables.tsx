@@ -31,7 +31,7 @@ const Page = () => (
     <Explanation>
       <p>
         Note: All of the examples above use a default tolerance level. The
-        variation is down to the <strong>extremity</strong> of the alignment.
+        variation is down to the <strong>extremeness</strong> of the alignment.
       </p>
     </Explanation>
   </>
