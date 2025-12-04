@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 import { pageLinks } from "../../hooks/pageLinks";
@@ -14,9 +13,7 @@ export const Home = () => (
             href !== "/" && (
               <li key={href}>
                 <Link href={href}>
-                  <a>
-                    <strong>{text}</strong>
-                  </a>
+                  <strong>{text}</strong>
                 </Link>
               </li>
             )

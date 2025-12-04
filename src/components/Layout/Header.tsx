@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -12,11 +11,11 @@ export const Header = () => {
       <header>
         <nav>
           {pageLinks.map(({ href, text }) => {
-            const active = href === currentPath;
+            const isActive = href === currentPath;
 
             return (
-              <Link href={href} key={href}>
-                <a className={active && "active"}>{text}</a>
+              <Link href={href} key={href} className={isActive ? "active" : ""}>
+                {text}
               </Link>
             );
           })}
@@ -29,6 +28,8 @@ export const Header = () => {
           align-items: center;
           display: flex;
           justify-content: left;
+          font-weight: 600;
+          gap: 0.5rem;
         }
         @media screen and (max-width: 599px) {
           nav {
@@ -40,16 +41,9 @@ export const Header = () => {
             flex-direction: row;
           }
         }
-        a {
-          padding: 0.5rem;
-        }
-        a:first-child {
-          padding-left: 0;
-        }
-        a.active {
+
+        nav :global(a.active) {
           color: black;
-          font-weight: bold;
-          text-decoration: none;
         }
       `}</style>
     </>
