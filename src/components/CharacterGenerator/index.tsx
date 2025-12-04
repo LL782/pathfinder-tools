@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 export const CharacterGenerator = () => (
@@ -8,6 +7,12 @@ export const CharacterGenerator = () => (
       borderRadius: "6px",
     }}
   >
-    <Image src="/searcher.jpg" layout="responsive" width="3024" height="4032" />
+    <Image
+      src="/searcher.jpg"
+      alt="Pen drawing of The Searcher character"
+      layout="responsive"
+      width="3024"
+      height="4032"
+    />
   </div>
 );

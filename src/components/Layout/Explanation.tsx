@@ -1,6 +1,10 @@
 import React from "react";
 
-export const Explanation = ({ children }) => (
+interface Props {
+  children: React.ReactNode;
+}
+
+export const Explanation = ({ children }: Props) => (
   <>
     <aside>{children}</aside>
     <hr />

@@ -22,7 +22,10 @@ const rollD6 = () => Math.round(Math.random() * (6 - 1) + 1);
 const roll3D6 = (): ThreeDice => [rollD6(), rollD6(), rollD6()];
 const sum = (values: number[]) => values.reduce((a, b) => a + b, 0);
 
-const keepHighestTotal = (bestAttempt, attempt) => {
+const keepHighestTotal = (
+  bestAttempt: ThreeDice,
+  attempt: ThreeDice
+): ThreeDice => {
   return sum(attempt) > sum(bestAttempt) ? attempt : bestAttempt;
 };
 

@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { heroStatsGenerator } from "../../pages/api/dice/hero-stats-generator";
 
-import { Table } from "../Layout/Table";
+import { Table, TableBody } from "../Layout/Table";
 
 export const HeroStatsGenerator = () => {
   const { columnHeadings } = heroStatsGenerator().tableFormat;
 
-  const [body, setTableBody] = useState([]);
-  const [results, setResults] = useState(null);
+  const [body, setTableBody] = useState<TableBody>([]);
+  const [results, setResults] = useState<string | null>(null);
 
   const updateResults = () => {
     const { raw, tableFormat } = heroStatsGenerator();

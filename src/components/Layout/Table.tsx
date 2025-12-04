@@ -1,10 +1,8 @@
-import React from "react";
-
-export type TableBody = (String | Number)[][];
+export type TableBody = (string | number)[][];
 interface Props {
   tableBody?: TableBody;
-  caption?: String;
-  columnHeadings?: String[];
+  caption?: string;
+  columnHeadings?: string[];
 }
 
 export const Table = ({

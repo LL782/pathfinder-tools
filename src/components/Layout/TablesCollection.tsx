@@ -1,6 +1,10 @@
 import React from "react";
 
-export const TablesCollection = ({ children }) => (
+interface Props {
+  children: React.ReactNode;
+}
+
+export const TablesCollection = ({ children }: Props) => (
   <>
     <div>{children}</div>
     <style jsx>{`

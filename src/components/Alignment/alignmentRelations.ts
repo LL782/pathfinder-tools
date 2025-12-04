@@ -1,138 +1,136 @@
-const oneStepRemovedFrom = (alignment) => {
-  let result;
+type Alignment =
+  | "Lawful Good"
+  | "Chaotic Good"
+  | "Lawful Evil"
+  | "Chaotic Evil"
+  | "Neutral Good"
+  | "Neutral Evil"
+  | "Lawful Neutral"
+  | "Chaotic Neutral"
+  | "True Neutral"
+  | string;
 
+const oneStepRemovedFrom = (alignment: Alignment): Alignment[] => {
   switch (alignment) {
     case "Lawful Good":
-      result = ["Lawful Neutral", "Neutral Good"];
-      break;
+      return ["Lawful Neutral", "Neutral Good"];
+
     case "Chaotic Good":
-      result = ["Chaotic Neutral", "Neutral Good"];
-      break;
+      return ["Chaotic Neutral", "Neutral Good"];
+
     case "Lawful Evil":
-      result = ["Lawful Neutral", "Neutral Evil"];
-      break;
+      return ["Lawful Neutral", "Neutral Evil"];
+
     case "Chaotic Evil":
-      result = ["Chaotic Neutral", "Neutral Evil"];
-      break;
+      return ["Chaotic Neutral", "Neutral Evil"];
+
     case "Neutral Good":
-      result = ["Lawful Good", "True Neutral", "Chaotic Good"];
-      break;
+      return ["Lawful Good", "True Neutral", "Chaotic Good"];
+
     case "Neutral Evil":
-      result = ["Chaotic Evil", "True Neutral", "Lawful Evil"];
-      break;
+      return ["Chaotic Evil", "True Neutral", "Lawful Evil"];
+
     case "Lawful Neutral":
-      result = ["Lawful Good", "True Neutral", "Lawful Evil"];
-      break;
+      return ["Lawful Good", "True Neutral", "Lawful Evil"];
+
     case "Chaotic Neutral":
-      result = ["Chaotic Good", "True Neutral", "Chaotic Evil"];
-      break;
+      return ["Chaotic Good", "True Neutral", "Chaotic Evil"];
+
     case "True Neutral":
-      result = [
+      return [
         "Neutral Good",
         "Neutral Evil",
         "Lawful Neutral",
         "Chaotic Neutral",
       ];
-      break;
-  }
 
-  return result;
+    default:
+      return [];
+  }
 };
 
-const twoStepsRemovedFrom = (alignment) => {
-  let result;
-
+const twoStepsRemovedFrom = (alignment: Alignment): Alignment[] => {
   switch (alignment) {
     case "Lawful Good":
-      result = ["Lawful Evil", "Chaotic Good", "True Neutral"];
-      break;
+      return ["Lawful Evil", "Chaotic Good", "True Neutral"];
+
     case "Chaotic Good":
-      result = ["Lawful Good", "Chaotic Evil", "True Neutral"];
-      break;
+      return ["Lawful Good", "Chaotic Evil", "True Neutral"];
+
     case "Lawful Evil":
-      result = ["Lawful Good", "Chaotic Evil", "True Neutral"];
-      break;
+      return ["Lawful Good", "Chaotic Evil", "True Neutral"];
+
     case "Chaotic Evil":
-      result = ["Chaotic Good", "Lawful Evil", "True Neutral"];
-      break;
+      return ["Chaotic Good", "Lawful Evil", "True Neutral"];
+
     case "Neutral Good":
-      result = ["Neutral Evil", "Lawful Neutral", "Chaotic Neutral"];
-      break;
+      return ["Neutral Evil", "Lawful Neutral", "Chaotic Neutral"];
+
     case "Neutral Evil":
-      result = ["Neutral Good", "Lawful Neutral", "Chaotic Neutral"];
-      break;
+      return ["Neutral Good", "Lawful Neutral", "Chaotic Neutral"];
+
     case "Lawful Neutral":
-      result = ["Neutral Good", "Neutral Evil", "Chaotic Neutral"];
-      break;
+      return ["Neutral Good", "Neutral Evil", "Chaotic Neutral"];
+
     case "Chaotic Neutral":
-      result = ["Neutral Good", "Neutral Evil", "Lawful Neutral"];
-      break;
+      return ["Neutral Good", "Neutral Evil", "Lawful Neutral"];
+
     case "True Neutral":
-      result = ["Lawful Good", "Lawful Evil", "Chaotic Good", "Chaotic Evil"];
-      break;
-  }
+      return ["Lawful Good", "Lawful Evil", "Chaotic Good", "Chaotic Evil"];
 
-  return result;
+    default:
+      return [];
+  }
 };
 
-const threeStepsRemovedFrom = (alignment) => {
-  let result;
-
+const threeStepsRemovedFrom = (alignment: Alignment): Alignment[] => {
   switch (alignment) {
     case "Lawful Good":
-      result = ["Chaotic Neutral", "Neutral Evil"];
-      break;
+      return ["Chaotic Neutral", "Neutral Evil"];
+
     case "Chaotic Good":
-      result = ["Lawful Neutral", "Neutral Evil"];
-      break;
+      return ["Lawful Neutral", "Neutral Evil"];
+
     case "Lawful Evil":
-      result = ["Neutral Good", "Chaotic Neutral"];
-      break;
+      return ["Neutral Good", "Chaotic Neutral"];
+
     case "Chaotic Evil":
-      result = ["Neutral Good", "Lawful Neutral"];
-      break;
+      return ["Neutral Good", "Lawful Neutral"];
+
     case "Neutral Good":
-      result = ["Chaotic Evil", "Lawful Evil"];
-      break;
-    case "Neutral Evil":
-      result = ["Chaotic Good", "Lawful Good"];
-      break;
-    case "Lawful Neutral":
-      result = ["Chaotic Good", "Chaotic Evil"];
-      break;
-    case "Chaotic Neutral":
-      result = ["Lawful Good", "Lawful Evil"];
-      break;
-    default:
-      result = [];
-      break;
-  }
+      return ["Chaotic Evil", "Lawful Evil"];
 
-  return result;
+    case "Neutral Evil":
+      return ["Chaotic Good", "Lawful Good"];
+
+    case "Lawful Neutral":
+      return ["Chaotic Good", "Chaotic Evil"];
+
+    case "Chaotic Neutral":
+      return ["Lawful Good", "Lawful Evil"];
+
+    default:
+      return [];
+  }
 };
 
-const fourStepsRemovedFrom = (alignment) => {
-  let result;
-
+const fourStepsRemovedFrom = (alignment: Alignment): Alignment[] => {
   switch (alignment) {
     case "Lawful Good":
-      result = ["Chaotic Evil"];
-      break;
-    case "Chaotic Good":
-      result = ["Lawful Evil"];
-      break;
-    case "Lawful Evil":
-      result = ["Chaotic Good"];
-      break;
-    case "Chaotic Evil":
-      result = ["Lawful Good"];
-      break;
-    default:
-      result = [];
-      break;
-  }
+      return ["Chaotic Evil"];
 
-  return result;
+    case "Chaotic Good":
+      return ["Lawful Evil"];
+
+    case "Lawful Evil":
+      return ["Chaotic Good"];
+
+    case "Chaotic Evil":
+      return ["Lawful Good"];
+
+    default:
+      return [];
+  }
 };
 
 export {

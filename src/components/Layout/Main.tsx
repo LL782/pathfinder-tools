@@ -1,3 +1,7 @@
 import React from "react";
 
-export const Main = ({ children }) => <main>{children}</main>;
+interface Props {
+  children: React.ReactNode;
+}
+
+export const Main = ({ children }: Props) => <main>{children}</main>;
