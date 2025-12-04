@@ -35,24 +35,24 @@ _Note that I'll use the words "website" and "app" interchangeably._
 
 ### Getting started
 
-To run the website locally, you will need [**Node**](https://nodejs.org/en/) installed on your computer, if you don't already.
+To run the website locally, you will need [**Node**](https://nodejs.org/en/) installed on your computer, if you don't already have it I recommend installing via [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating)
 
-You'll also need [**Yarn**](https://yarnpkg.com/) (or [**npm**](npmjs.com/)) to manage packages.
+You'll also need [**pnpm**](https://pnpm.io/) to manage packages.
 
 #### Run these commands in your Terminal
 
-Once you have your dependancies (Node and Yarn) run the following scripts from your Terminal.
+Once you have the pre-requisits installed (Node and pnpm) run the following scripts from your Terminal:
 
 To install or upgrade the app:
 
 ```bash
-yarn
+pnpm
 ```
 
-To start the running the website:
+To start the app:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 Visit [http://localhost:3000](http://localhost:3000) and you should see the website running in dev mode.
